@@ -67,13 +67,6 @@ body {
   width: 50%;
   margin: 0 auto;
 }
-/* header styles */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-}
 .logo {
   display: flex;
   gap: 20px;
@@ -89,7 +82,16 @@ nav {
   /* height: 56px; */
   object-fit: cover;
 }
-
+.hide {
+  display: none;
+}
+/* header styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
 nav .navigation-items {
   display: flex;
   gap: 20px;
@@ -352,19 +354,24 @@ nav .navigation-items li:hover a {
 .newsletter-contant {
   width: 35%;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+  /* justify-content: center;
+  align-items: center; */
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
   border-radius: 16px;
   border: 1px solid var(--color-primary);
   padding: 30px 60px;
 }
-.newsletter-contant > h4 {
+.newsletter-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.newsletter-contant h4 {
   font-size: 24px;
   font-weight: 800;
 }
-hr {
+.newsletter-contant hr {
   background-color: var(--color-primary);
   margin: 20px 0;
   height: 1px;
@@ -374,6 +381,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 input {
   padding: 15px;
@@ -383,6 +391,7 @@ input {
   background: rgba(19, 19, 24, 0.05);
   outline: none;
   border: none;
+  /* margin: 20px 0; */
 }
 .newsletter-img-container {
   flex-grow: 2;
@@ -547,15 +556,26 @@ footer hr {
   }
   .newsletter-contant {
     width: 100%;
-    padding: 30px;
+    padding: 30px 0;
+    /* padding: 30px; */
     /* padding: 20px; */
   }
-  /* .newsletter-contant form {
-    width: 100%;
-  } */
-  input {
-    width: 70%;
+  .newsletter-intro,
+  .newsletter-contant form {
+    /* width: 100%; */
+    /* padding: 0 20px; */
+    width: 90%;
     margin: 0 auto;
+  }
+
+  input {
+    /* width: 70%; */
+    /* width: 290px; */
+    /* margin: 0 auto; */
+    /* padding: 10px; */
+    font-size: 16px;
+    font-weight: 500;
+    /* margin: 20px 0; */
   }
   .newsletter-img-container .tag {
     border-radius: 10px;
@@ -658,7 +678,13 @@ footer hr {
     flex-direction: column;
   }
   .newsletter-contant {
+    padding: 40px 0;
     width: 100%;
+  }
+  .newsletter-intro,
+  .newsletter-contant form {
+    width: 90%;
+    margin: 0 auto;
   }
   footer {
     padding: 40px 0;
