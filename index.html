@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- css styles -->
     <link rel="stylesheet" href="./styles/Travel-Trove.css">
+    <link rel="stylesheet" href="./styles/responsive-styles.css">
 </head>
 
 <body>
@@ -26,13 +27,16 @@
                 <img src="./Images/Group 40071 (2).png" alt="">
                 <h2>Travel <span class="text-primary">Trove</span></h2>
             </div>
-            <ul class="navigation-items">
+            <ul id="navigation-items" class="navigation-items">
                 <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#">Packages</a></li>
                 <li class="nav-item"><a href="#">Testimonial</a></li>
                 <li class="nav-item"><a href="#">Blog</a></li>
                 <li class="nav-item"><a href="#">Contact</a></li>
             </ul>
+            <div class="menu-icon hide">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <!-- <label for="toggle" class="menu-icon">&#9776;</label> -->
         </nav>
         <!-- banner section -->
@@ -163,7 +167,7 @@
         <!-- Testimonial section -->
         <section class="testimonial">
             <div class="section-intro">
-                <h3 class="section-heading">What Our Customer Says</h3>
+                <h3 class="section-heading">What Our Client Says</h3>
                 <p>Embark on unforgettable journeys with us! Discover seamless planning, breathtaking destinations, and
                     personalized service. Your dream vacation begins here.</p>
             </div>
@@ -215,7 +219,7 @@
                     <p>Get your daily dose of travel news & tips. Sign up today!</p>
                     <hr>
                 </div>
-                <form>
+                <form action="#">
                     <input type="text" name="name" id="name" placeholder="Enter your name">
                     <input type="email" name="email" id="email" placeholder="Enter your email">
                     <input type="submit" value="Subscribe" class="btn-primary">
