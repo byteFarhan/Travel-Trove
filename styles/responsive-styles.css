@@ -109,6 +109,39 @@
   .card-extra {
     width: 100%;
   }
+  /* Deals & Discounts section mobile responsive styles */
+  .deal {
+    padding: 50px;
+  }
+  .deal-start,
+  .deal-end {
+    justify-content: center;
+    align-items: center;
+  }
+  .deal-card {
+    padding: 20px;
+    width: 100%;
+  }
+  .deal-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .deal-card h5 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .deal-card button {
+    width: 50%;
+  }
+  .deal-tags {
+    display: flex;
+    gap: 10px;
+  }
+  .deal-tags > span {
+    gap: 5px;
+  }
+
+  /* testimonial section mobile responsive styles */
   .testimonial-container {
     grid-template-columns: 1fr;
   }
@@ -232,6 +265,37 @@
   .card-extra {
     width: 100%;
   }
+  /* Deals & Discounts section Tablet responsive styles */
+  .deal {
+    padding: 80px;
+  }
+  .deal-start,
+  .deal-end {
+    justify-content: center;
+    align-items: center;
+  }
+  .deal-card {
+    padding: 25px;
+    width: 80%;
+  }
+  .deal-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .deal-card h5 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .deal-card button {
+    width: 40%;
+  }
+  .deal-tags {
+    gap: 10px;
+  }
+  .deal-tags > span {
+    gap: 6px;
+  }
+  /* testimonial section Tablet responsive styles */
   .testimonial-container {
     grid-template-columns: repeat(2, 1fr);
   }
