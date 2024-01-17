@@ -141,6 +141,30 @@
     gap: 5px;
   }
 
+  /* video section Mobile responsive styles */
+  .video-container {
+    flex-direction: column;
+  }
+  .video-contant {
+    flex-basis: 100%;
+  }
+  .video-contant h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  .video-contant > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .video-contant > button {
+    width: 40%;
+  }
+  .video iframe {
+    height: 300px;
+  }
+
   /* testimonial section mobile responsive styles */
   .testimonial-container {
     grid-template-columns: 1fr;
@@ -294,6 +318,29 @@
   }
   .deal-tags > span {
     gap: 6px;
+  }
+  /* video section Tablet responsive styles */
+  .video-container {
+    flex-direction: column;
+  }
+  .video-contant {
+    flex-basis: 100%;
+  }
+  .video-contant h3 {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 50px;
+  }
+  .video-contant > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .video-contant > button {
+    width: 25%;
+  }
+  .video iframe {
+    height: 450px;
   }
   /* testimonial section Tablet responsive styles */
   .testimonial-container {

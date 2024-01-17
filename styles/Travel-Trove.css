@@ -315,6 +315,11 @@ nav .navigation-items li:hover a {
 .deals-and-discounts {
   margin: 100px 0;
 }
+.deals-and-discounts > button {
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: center; */
+}
 .deals-container {
   margin: 50px 0;
 }
@@ -384,7 +389,46 @@ nav .navigation-items li:hover a {
 }
 .deal-tags > span > p {
 }
-
+/* video section styles */
+.video-container {
+  margin: 100px 0;
+  display: flex;
+  gap: 24px;
+}
+.video-contant {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.video-contant h3 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
+}
+.video-contant > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.video-contant > ul > li {
+  color: var(--color-secondary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-left: 15px;
+}
+.video-contant > button {
+  width: 25%;
+}
+.video {
+  flex-grow: 1;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
 /* testimonial section styles */
 .testimonial {
   margin: 100px auto;
