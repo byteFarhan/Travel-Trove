@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
+:root {
+  --color-primary: #ff5400;
+  --color-secondary: #131318;
+  --color-gray: rgba(19, 19, 24, 0.7);
+}
+header,
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* padding: 15px; */
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-secondary);
+}
+p {
+  color: var(--color-gray);
+  line-height: 26px;
+}
+
+body {
+  margin: 30px auto 0;
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-secondary {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  color: var(--color-gray);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.section-heading {
+  color: var(--color-secondary);
+  font-size: 40px;
+  font-weight: 800;
+}
+.section-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+.section-intro p {
+  width: 50%;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.logo h2 {
+  color: var(--color-secondary);
+  font-size: 36px;
+  font-weight: 800;
+}
+.logo img {
+  width: 50px;
+  /* height: 56px; */
+  object-fit: cover;
+}
+.hide {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar div {
+  margin: 0;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    margin: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+  }
+
+  #toggle:checked + .navbar .nav-items {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .nav-items {
+    order: 2;
+  }
+
+  /* .menu-icon {
+        font-size: 50px;
+    } */
+}

@@ -98,7 +98,8 @@
   #destination-item-5,
   #destination-item-6,
   #destination-item-7 {
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
+    grid-column: auto;
   }
   /* .destination-item img {
       height: auto;
@@ -121,6 +122,9 @@
   .deal-card {
     padding: 20px;
     width: 100%;
+  }
+  .deal-card:hover {
+    transform: none;
   }
   .deal-card h4 {
     font-size: 20px;
@@ -281,7 +285,8 @@
   #destination-item-5,
   #destination-item-6,
   #destination-item-7 {
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
+    grid-column: auto;
   }
   .card-container {
     grid-template-columns: 1fr;
@@ -302,6 +307,9 @@
     padding: 25px;
     width: 80%;
   }
+  /* .deal-card:hover {
+    transform: none;
+  } */
   .deal-card h4 {
     font-size: 24px;
     font-weight: 700;

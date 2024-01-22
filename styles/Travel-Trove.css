@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Mulish", sans-serif;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 :root {
   --color-primary: #ff5400;
@@ -208,6 +209,7 @@ nav .navigation-items li:hover a {
 }
 .destination-item {
   position: relative;
+  cursor: pointer;
   /* flex: 1; */
 }
 .destination-item img {
@@ -233,6 +235,7 @@ nav .navigation-items li:hover a {
     rgba(19, 19, 24, 0.2) 100%
   );
   border-radius: 20px;
+  overflow: hidden;
 }
 .overlay-text {
   color: white;
@@ -324,7 +327,7 @@ nav .navigation-items li:hover a {
   margin: 50px 0;
 }
 .deal {
-  padding: 100px 50px;
+  padding: 100px 70px;
   border-radius: 15px;
   margin: 24px 0;
 }
@@ -361,6 +364,11 @@ nav .navigation-items li:hover a {
   gap: 16px;
   justify-content: start;
   /* align-items: center; */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.deal-card:hover {
+  transform: scale(1.1);
 }
 .deal-card h4 {
   color: var(--color-secondary);
@@ -514,10 +522,12 @@ input {
 .newsletter-img-container {
   flex-grow: 2;
   position: relative;
+  cursor: pointer;
 }
 .newsletter-img-container img {
   width: 100%;
   object-fit: cover;
+  /* cursor: pointer; */
 }
 .newsletter-img-container .tag {
   background-color: var(--color-primary);
